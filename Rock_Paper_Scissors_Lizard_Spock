@@ -1,5 +1,9 @@
 import random as rd
 
+print('================================')
+print('Rock Paper Scissors Lizard Spock')
+print('================================')
+
 options = ['✊', '✋', '✌️', '🦎', '🖖']
 print('1) ✊')
 print('2) ✋')
