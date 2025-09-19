@@ -1,0 +1,40 @@
+import math
+
+print('==================')
+print('Area Calculator 📐')
+print('==================')
+
+print('1) Triangle')
+print('2) Rectangle')
+print('3) Square')
+print('4) Circle')
+print('5) Quit')
+
+while True:
+  try:
+    choice = int(input('Which shape (1-5): '))
+    if choice == 1:
+      height = float(input('Height ='))
+      base = float(input('Base = '))
+      triangle_area = (height*base)/2
+      print(f'The triangle area = {triangle_area:.2f}')
+    elif choice == 2:
+      length = float(input('Length = '))
+      width = float(input('Width = '))
+      rectangle_area = length*width
+      print(f'The rectangle area = {rectangle_area:.2f}')
+    elif choice == 3:
+      side = float(input('Side = '))
+      square_area = side**2
+      print(f'The square area = {square_area:.2f}')
+    elif choice == 4:
+      radius = float(input('Radius = '))
+      circle_area = math.pi * (radius**2)
+      print(f'The circle area = {circle_area:.2f}')
+    else:
+      print('See you')
+      break
+
+  except ValueError:
+    print('Invalid input! Please enter a number')
+
